@@ -24,4 +24,7 @@ $(document).ready(function () {
       $("#hidden1").show();
       $("#life-expectancy").show();
   });
+  $('.planet-button').click(function (event) {
+    
+  });
 });
