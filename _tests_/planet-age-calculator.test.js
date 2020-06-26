@@ -43,4 +43,5 @@ describe('User', () => {
     expect(reusableUser.planetaryLifeExpectancy).toBe(36);
     console.log(reusableUser);
   });
+  
 });
