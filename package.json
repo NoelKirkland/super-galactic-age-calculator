@@ -1,7 +1,7 @@
 {
-  "name": "project-name",
+  "name": "super-galactic-age-calculator",
   "version": "1.0.0",
-  "description": "description-here",
+  "description": "This web application tell the user how old they would be on another planet as well as how old they might live to on that planet.",
   "main": "main.js",
   "scripts": {
     "build": "webpack --mode development",
@@ -11,7 +11,7 @@
     "debug": "node --inspect-brk node_modules/.bin/jest --runInBand"
   },
   "keywords": [],
-  "author": "your-name-here",
+  "author": "Noel Kirkland",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",
