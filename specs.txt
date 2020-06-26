@@ -1,0 +1,35 @@
+Create an object constructor with name, age, and life expectancy
+
+Possible extra stuff is:
+max old age
+gender
+proximity to power plant in miles
+how much do you like firwords
+
+Create proto for life expectancy
+if gender male that max lifeexpectancy is max old age times .88
+
+
+create proto for Mercury
+current planetary age:
+user.age*365/(365*0.24)
+planetary life expectancy: 
+user.lifeExp*365/(365*0.24)
+
+create proto for venus
+current planetary age:
+user.age*365/(365*0.62)
+planetary life expectancy 
+user.lifeExp*365/(365*0.62)
+
+create proto for mars
+current planetary age:
+user.age*365/(365*1.88)
+planetary life expectancy 
+user.lifeExp*365/(365*1.88)
+
+create proto for Jupiter
+current planetary age:
+user.age*365/(365*11.86)
+planetary life expectancy 
+user.lifeExp*365/(365*11.86)
