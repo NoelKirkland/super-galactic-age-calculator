@@ -1,1 +1,10 @@
-/* Some CSS! */
+#horizontal li
+{
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}
+
+#hidden1{
+  display: none;
+}

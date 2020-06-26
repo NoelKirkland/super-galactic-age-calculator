@@ -13,7 +13,7 @@
 
   <!-- Uncomment the following code to check that bootstrap is working! -->
 
-  <!-- <div class="card">
+  <div class="card">
     <div class="card" style="width: 18rem;">
       <img class="card-img-top"
         src="https://images.unsplash.com/photo-1534278931827-8a259344abe7?ixlib=rb-1.2.1&w=1000&q=80"
@@ -25,7 +25,95 @@
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
-  </div> -->
+  </div>
+
+  <h1>Super Galactic Age Calculator</h1>
+  <form id="user-info">
+    <div class="form-group">
+      <label for="first-name">What is your first name?</label>
+      <input id="first-name" class="form-control-box" type="text">
+    </div>
+
+    <div class="form-group">
+      <label for="age">How old are you?</label>
+      <input id="age" class="form-control-box" type="number">
+    </div>
+
+    <div class="form-group">
+      <label for="gender">What is your gender</label>
+      <ul id="horizontal">
+        <li class="radio">
+          <label>
+          <input type="radio" name="gender" value="male">Male</label>
+        </li>
+        <li class="radio">
+          <label>
+          <input type="radio" name="gender" value="female">Female</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="form-group">
+      <label for="love-of-fireworks">How much do you <em>love</em> fireworks?</label>
+      <ul id="horizontal">
+        <li class="radio">
+          <label>
+          <input type="radio" name="love-of-fireworks" value="1">1</label>
+        </li>
+        <li class="radio">
+          <label>
+          <input type="radio" name="love-of-fireworks" value="2">2</label>
+        </li>
+        <li class="radio">
+          <label>
+          <input type="radio" name="love-of-fireworks" value="3">3</label>
+        </li>
+        <li class="radio">
+          <label>
+          <input type="radio" name="love-of-fireworks" value="4">4</label>
+        </li>
+        <li class="radio">
+          <label>
+          <input type="radio" name="love-of-fireworks" value="5">5</label>
+        </li>
+        <li class="radio">
+          <label>
+          <input type="radio" name="love-of-fireworks" value="6">6</label>
+        </li>
+        <li class="radio">
+          <label>
+          <input type="radio" name="love-of-fireworks" value="7">7</label>
+        </li>
+        <li class="radio">
+          <label>
+          <input type="radio" name="love-of-fireworks" value="8">8</label>
+        </li>
+        <li class="radio">
+          <label>
+          <input type="radio" name="love-of-fireworks" value="9">9</label>
+        </li>
+        <li class="radio">
+          <label>
+          <input type="radio" name="love-of-fireworks" value="10">10</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="form-group">
+      <label for="nuclear-proximity">How close do you live to a nuclear power plant?</label>
+      <select class="form-control" id="nuclear-proximity">
+        <option></option>
+        <option>less than 1000 miles</option>
+        <option>less than 100 miles</option>
+        <option>less than 20 miles</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn">Submit</button>
+  </form>
+  <div id="hidden1">
+    <p>According to my calculations, your should live to about <span id="life-expectancy"></span> years old.</p>
+  </div>
 </body>
 
 </html>

@@ -3,7 +3,7 @@ import { User } from '../src/planet-age-calculator.js';
 describe('User', () => {
   let reusableUser;
   beforeEach(() => {
-    reusableUser = new User("Noel", 27, "Male", 10, "less than 1000 miles", 100, null, null);
+    reusableUser = new User("Noel", 27, "Male", 10, "less than 1000 miles", null, null, null);
   });
 
   test('Should create a new user object with a life expectancy, a Mars age and a Mars life expectancy', () => {
@@ -42,12 +42,10 @@ describe('User', () => {
   test('Should correctly calculate age on Venus', () => {
     reusableUser.jupiterCalculator();
     expect(reusableUser.planetaryAge).toBe(2);
-    console.log(reusableUser);
   });
   test('Should correctly calculate life expectancy on Venus', () => {
     reusableUser.lifeExpectancyCalculator();
     reusableUser.jupiterCalculator();
     expect(reusableUser.planetaryLifeExpectancy).toBe(6);
-    console.log(reusableUser);
   });
 });
