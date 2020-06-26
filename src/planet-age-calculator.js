@@ -44,7 +44,8 @@ export class User {
   }
 
   murcuryCalculator(){
-
+    this.planetaryAge = parseInt((this.age * 365/(365*0.24)).toFixed());
+    this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*0.24)).toFixed());
   }
 }
 

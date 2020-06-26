@@ -7,22 +7,20 @@ describe('User', () => {
   });
 
   test('Should create a new user object with a life expectancy, a Mars age and a Mars life expectancy', () => {
-    console.log(reusableUser);
   });
   test('Should correctly calculate life expectancy for user', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(68);
-    console.log(reusableUser);
   });
   test('Should correctly calculate ag and life expectancy on Murcury', () => {
     reusableUser.murcuryCalculator();
-    expect(reusableUser.planetaryLifeExpectancy).toBe(32);
-    expect(reusableUser.planetaryAge).toBe(50);
+    expect(reusableUser.planetaryAge).toBe(113);
     console.log(reusableUser);
   });
   test('Should correctly calculate ag and life expectancy on Murcury', () => {
+    reusableUser.lifeExpectancyCalculator();
     reusableUser.murcuryCalculator();
-    expect(reusableUser.planetaryAge).toBe(50);
+    expect(reusableUser.planetaryLifeExpectancy).toBe(283);
     console.log(reusableUser);
   });
 });
