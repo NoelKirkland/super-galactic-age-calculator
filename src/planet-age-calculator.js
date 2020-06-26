@@ -56,7 +56,8 @@ export class User {
     this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*1.88)).toFixed());
   };
   jupiterCalculator(){
-    
-  }
+    this.planetaryAge = parseInt((this.age * 365/(365*11.86)).toFixed());
+    this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*11.86)).toFixed());
+  };
 }
 
