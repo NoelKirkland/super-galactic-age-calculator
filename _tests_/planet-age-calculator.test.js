@@ -10,7 +10,7 @@ describe('User', () => {
     console.log(reusableUser);
   });
   test('Should correctly calculate life expectancy for user', () => {
-    reusableUser.lifeExpectancyCalculate();
+    reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(68);
     console.log(reusableUser);
   });

@@ -10,13 +10,15 @@ export class User {
     this.planetaryLifeExpectancy = planetaryLifeExpectancy
   }
 
-  lifeExpectancyCalculate(){
+  lifeExpectancyCalculator(){
     if (this.gender === "Female"){
       this.lifeExpectancy  -= 10
     } else (this.gender === "Male");{
       this.lifeExpectancy  -= 18
     } 
+
     this.lifeExpectancy -= this.fireworkPropensity
+    
     if (this.nuclearProximity === "less than 1000 miles"){
       this.lifeExpectancy  *= 0.95
     } else if (this.nuclearProximity === "less than 100 miles"){
@@ -24,6 +26,7 @@ export class User {
     } else if (this.nuclearProximity === "less than 20 miles"){
       this.lifeExpectancy  *= 0.75
     }
+    this.lifeExpectancy = parseInt(this.lifeExpectancy.toFixed());
   }
 }
 
