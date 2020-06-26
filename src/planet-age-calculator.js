@@ -48,7 +48,8 @@ export class User {
     this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*0.24)).toFixed());
   }
   venusCalculator(){
-
+    this.planetaryAge = parseInt((this.age * 365/(365*0.62)).toFixed());
+    this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*0.62)).toFixed());
   }
 }
 
