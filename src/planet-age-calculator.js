@@ -41,15 +41,18 @@ export class User {
       this.lifeExpectancy  *= 0.75
     }
     this.lifeExpectancy = parseInt(this.lifeExpectancy.toFixed());
-  }
+  };
 
   murcuryCalculator(){
     this.planetaryAge = parseInt((this.age * 365/(365*0.24)).toFixed());
     this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*0.24)).toFixed());
-  }
+  };
   venusCalculator(){
     this.planetaryAge = parseInt((this.age * 365/(365*0.62)).toFixed());
     this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*0.62)).toFixed());
+  };
+  marsCalculator(){
+
   }
 }
 
