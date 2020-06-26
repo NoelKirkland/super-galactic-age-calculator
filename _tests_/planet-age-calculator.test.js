@@ -16,7 +16,13 @@ describe('User', () => {
   });
   test('Should correctly calculate ag and life expectancy on Murcury', () => {
     reusableUser.murcuryCalculator();
-    expect(reusableUser.planetaryLifeExpectancy, reusableUser.planetaryAge).toBe(32, 50);
+    expect(reusableUser.planetaryLifeExpectancy).toBe(32);
+    expect(reusableUser.planetaryAge).toBe(50);
+    console.log(reusableUser);
+  });
+  test('Should correctly calculate ag and life expectancy on Murcury', () => {
+    reusableUser.murcuryCalculator();
+    expect(reusableUser.planetaryAge).toBe(50);
     console.log(reusableUser);
   });
 });
