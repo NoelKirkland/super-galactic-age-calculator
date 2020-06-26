@@ -28,6 +28,15 @@ _In this web application the user is promted to fill out a few different data fi
 `https://noelkirkland.github.io/pizza-place`_
 
 ## General specifications
+|  Behavior: | Input: | Output: |
+| :---: | :---: | :---: |
+|  user enters name | Noel |  |
+|  user enters age | 27 |  |
+|  user enters their gender | male |  |
+|  user enters their love of fireworks on a scale from one to ten | 9 |  |
+|  user selects from a drop down menue their residential proximity to a nuclear power plant.<br/>"<20 miles, <100 miles, <500 miles" | less than 100 miles |  |
+|  user clicks to see their current age and life expectancy on mars | _button click_ | Hello Noel, with a current earth age of 27 and a life expectancy of 78 you would currently be 14 years old on Marts and you would live to be 41 there. |
+|||
 
 ## Techinal specifications
 
