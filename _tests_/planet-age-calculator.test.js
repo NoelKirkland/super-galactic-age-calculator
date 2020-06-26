@@ -12,15 +12,24 @@ describe('User', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(68);
   });
-  test('Should correctly calculate ag and life expectancy on Murcury', () => {
+  test('Should correctly calculate age on Murcury', () => {
     reusableUser.murcuryCalculator();
     expect(reusableUser.planetaryAge).toBe(113);
-    console.log(reusableUser);
   });
-  test('Should correctly calculate ag and life expectancy on Murcury', () => {
+  test('Should correctly calculate life expectancy on Murcury', () => {
     reusableUser.lifeExpectancyCalculator();
     reusableUser.murcuryCalculator();
     expect(reusableUser.planetaryLifeExpectancy).toBe(283);
+  });
+  test('Should correctly calculate age on Venus', () => {
+    reusableUser.venusCalculator();
+    expect(reusableUser.planetaryAge).toBe(200);
+    console.log(reusableUser);
+  });
+  test('Should correctly calculate life expectancy on Venus', () => {
+    reusableUser.lifeExpectancyCalculator();
+    reusableUser.venusCalculator();
+    expect(reusableUser.planetaryLifeExpectancy).toBe(420);
     console.log(reusableUser);
   });
 });
