@@ -1,5 +1,3 @@
-// project business logic goes here
-// exports!
 export class User {
   constructor(firstName, age, gender, fireworkPropensity, nuclearProximity, lifeExpectancy, planetaryAge, planetaryLifeExpectancy){
     this.firstName = firstName,
@@ -10,5 +8,9 @@ export class User {
     this.lifeExpectancy = lifeExpectancy,
     this.planetaryAge = planetaryAge,
     this.planetaryLifeExpectancy = planetaryLifeExpectancy
+  }
+
+  lifeExpectancy(){
+
   }
 }
