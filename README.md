@@ -40,6 +40,15 @@ _In this web application the user is promted to fill out a few different data fi
 
 ## Techinal specifications
 
+* Create a constructor function that will build a user profile that includes; first name, age, gender, love of fireworks, proximity to power plant, and life expectancty
+
+* Create a function that will calculate the age and life expectancy for the user if they were on Mercury
+
+* Create a function that will calculate the age and life expectancy for the user if they were on Venus
+
+* Create a function that will calculate the age and life expectancy for the user if they were on Mars
+
+* Create a function that will calculate the age and life expectancy for the user if they were on Jupiter
 ## Known Bugs
 
 ## Support and contact details
