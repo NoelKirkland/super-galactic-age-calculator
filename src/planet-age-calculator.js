@@ -10,7 +10,7 @@ export class User {
     this.planetaryLifeExpectancy = planetaryLifeExpectancy
   }
 
-  lifeExpectancy(){
+  lifeExpectancyCalculate(){
 
   }
 }
