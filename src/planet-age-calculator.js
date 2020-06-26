@@ -6,10 +6,24 @@ export class User {
     this.fireworkPropensity = fireworkPropensity,
     this.nuclearProximity = nuclearProximity,
     this.lifeExpectancy = 100,
-    this.planetaryAge = planetaryAge,
-    this.planetaryLifeExpectancy = planetaryLifeExpectancy
+    this.planetaryAge = null,
+    this.planetaryLifeExpectancy = null
   }
 
+        /*
+      life expectancy variables:
+      1. this.gender:
+        "male", "female"
+
+      2. this.fireworkPropensity
+        1,2,3,4,5,6,7,8,9,10
+
+      3. this.nuclearProximity
+        "less than 1000 miles"
+        "less than 100 miles"
+        "less than 20 miles"
+      */
+    
   lifeExpectancyCalculator(){
     if (this.gender === "Female"){
       this.lifeExpectancy  -= 10
@@ -28,20 +42,9 @@ export class User {
     }
     this.lifeExpectancy = parseInt(this.lifeExpectancy.toFixed());
   }
+
+  murcuryCalculator(){
+
+  }
 }
 
-  
-
-      /*
-      life expectancy variables:
-      1. this.gender:
-        "male", "female"
-
-      2. this.fireworkPropensity
-        1,2,3,4,5,6,7,8,9,10
-
-      3. this.nuclearProximity
-        "less than 1000 miles"
-        "less than 100 miles"
-        "less than 20 miles"
-      */
