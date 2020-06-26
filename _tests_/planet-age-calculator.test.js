@@ -43,5 +43,15 @@ describe('User', () => {
     expect(reusableUser.planetaryLifeExpectancy).toBe(36);
     console.log(reusableUser);
   });
-  
+  test('Should correctly calculate age on Venus', () => {
+    reusableUser.jupiterCalculator();
+    expect(reusableUser.planetaryAge).toBe(2);
+    console.log(reusableUser);
+  });
+  test('Should correctly calculate life expectancy on Venus', () => {
+    reusableUser.lifeExpectancyCalculator();
+    reusableUser.jupiterCalculator();
+    expect(reusableUser.planetaryLifeExpectancy).toBe(5);
+    console.log(reusableUser);
+  });
 });
