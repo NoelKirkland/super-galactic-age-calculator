@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles.css';
+import '../src/styles.css';
 import { User } from '../src/planet-age-calculator.js';
 
 $(document).ready(function () {
@@ -22,9 +22,31 @@ $(document).ready(function () {
       // console.log(inputtedNuclearProximity);
 
       $("#hidden1").show();
-      $("#life-expectancy").show();
+      $("#life-expectancy").show(this.lifeExpectancy);
   });
   $('.planet-button').click(function (event) {
-    
+      let planetSelect = $("#planet-select").val();
+
+      if (`{planetSelect}` = "Mercury"){
+        inputtedUser.murcuryCalculator();
+        $("#selected-planet").show(`{planetSelect}`);
+        $("#planetary-age").show(this.planetaryAge);
+        $("#planetary-life-expectancy").show(this.lifeExpectancy);
+      } else if (`{planetSelect}` = "Venus"){
+        inputtedUser.venusCalculator();
+        $("#selected-planet").show(`{planetSelect}`);
+        $("#planetary-age").show(this.planetaryAge);
+        $("#planetary-life-expectancy").show(this.lifeExpectancy);
+      } else if (`{planetSelect}` = "Mars"){
+        inputtedUser.marsCalculator();
+        $("#selected-planet").show(`{planetSelect}`);
+        $("#planetary-age").show(this.planetaryAge);
+        $("#planetary-life-expectancy").show(this.lifeExpectancy);
+      } else if (`{planetSelect}` = "Jupiter"){
+        inputtedUser.jupiterCalculator();
+        $("#selected-planet").show(`{planetSelect}`);
+        $("#planetary-age").show(this.planetaryAge);
+        $("#planetary-life-expectancy").show(this.lifeExpectancy);
+      }
   });
 });
