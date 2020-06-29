@@ -7,131 +7,110 @@
 </head>
 
 <body>
-  <!-- Some sort of HTML that directly correlates with your main.js -->
-
-  <!-- Some sort of HTML that directly correlates with your main.js -->
-
-  <!-- Uncomment the following code to check that bootstrap is working! -->
-
-  <div class="card">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top"
-        src="https://images.unsplash.com/photo-1534278931827-8a259344abe7?ixlib=rb-1.2.1&w=1000&q=80"
-        alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This should be a working card class!
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-
-  <h1>Super Galactic Age Calculator</h1>
-  <form id="user-info">
-    <div class="form-group">
-      <label for="first-name">What is your first name?</label>
-      <input id="first-name" class="form-control-box" type="text">
-    </div>
-
-    <div class="form-group">
-      <label for="age">How old are you?</label>
-      <input id="age" class="form-control-box" type="number">
-    </div>
-
-    <div class="form-group">
-      <label for="gender">What is your gender</label>
-      <ul id="horizontal">
-        <li class="radio">
-          <label>
-          <input type="radio" name="gender" value="male">Male</label>
-        </li>
-        <li class="radio">
-          <label>
-          <input type="radio" name="gender" value="female">Female</label>
-        </li>
-      </ul>
-    </div>
-
-    <div class="form-group">
-      <label for="love-of-fireworks">How much do you <em>love</em> fireworks?</label>
-      <ul id="horizontal">
-        <li class="radio">
-          <label>
-          <input type="radio" name="love-of-fireworks" value="1">1</label>
-        </li>
-        <li class="radio">
-          <label>
-          <input type="radio" name="love-of-fireworks" value="2">2</label>
-        </li>
-        <li class="radio">
-          <label>
-          <input type="radio" name="love-of-fireworks" value="3">3</label>
-        </li>
-        <li class="radio">
-          <label>
-          <input type="radio" name="love-of-fireworks" value="4">4</label>
-        </li>
-        <li class="radio">
-          <label>
-          <input type="radio" name="love-of-fireworks" value="5">5</label>
-        </li>
-        <li class="radio">
-          <label>
-          <input type="radio" name="love-of-fireworks" value="6">6</label>
-        </li>
-        <li class="radio">
-          <label>
-          <input type="radio" name="love-of-fireworks" value="7">7</label>
-        </li>
-        <li class="radio">
-          <label>
-          <input type="radio" name="love-of-fireworks" value="8">8</label>
-        </li>
-        <li class="radio">
-          <label>
-          <input type="radio" name="love-of-fireworks" value="9">9</label>
-        </li>
-        <li class="radio">
-          <label>
-          <input type="radio" name="love-of-fireworks" value="10">10</label>
-        </li>
-      </ul>
-    </div>
-
-    <div class="form-group">
-      <label for="nuclear-proximity">How close do you live to a nuclear power plant?</label>
-      <select class="form-control" id="nuclear-proximity">
-        <option></option>
-        <option>less than 1000 miles</option>
-        <option>less than 100 miles</option>
-        <option>less than 20 miles</option>
-      </select>
-    </div>
-
-    <button type="submit" class="btn">Submit</button>
-  </form>
-  <div id="hidden1">
-    <p>According to my calculations, your should live to about <span id="life-expectancy"></span> years old.</p>
-
-    <p>To see your age and life expectancy if you were living on another plant simply select one of the planets from the drop-down menue below.</p>
-    <form action="click" id="planet-select">
+  <div id="container">
+    <h1>Super Galactic Age Calculator</h1>
+    <form id="user-info">
       <div class="form-group">
-        <label for="planet-select">Select one of the planets below:</label>
-        <select class="form-control" id="planet-select">
-          <option></option>
-          <option>Mercury</option>
-          <option>Venus</option>
-          <option>Mars</option>
-          <option>Jupiter</option>
-        </select>
-        <button type="click" class="planet-button">Submit</button>
+        <label for="first-name">What is your first name?</label>
+        <input id="first-name" class="form-control-box" type="text">
       </div>
+
+      <div class="form-group">
+        <label for="age">How old are you?</label>
+        <input id="age" class="form-control-box" type="number">
+      </div>
+
+      <div class="form-group">
+        <label for="gender">What is your gender</label>
+        <ul id="horizontal">
+          <li class="radio">
+            <label>
+            <input type="radio" name="gender" value="male">Male</label>
+          </li>
+          <li class="radio">
+            <label>
+            <input type="radio" name="gender" value="female">Female</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="form-group">
+        <label for="love-of-fireworks">How much do you <em>love</em> fireworks?</label>
+        <ul id="horizontal">
+          <li class="radio">
+            <label>
+            <input type="radio" name="love-of-fireworks" value="1">1</label>
+          </li>
+          <li class="radio">
+            <label>
+            <input type="radio" name="love-of-fireworks" value="2">2</label>
+          </li>
+          <li class="radio">
+            <label>
+            <input type="radio" name="love-of-fireworks" value="3">3</label>
+          </li>
+          <li class="radio">
+            <label>
+            <input type="radio" name="love-of-fireworks" value="4">4</label>
+          </li>
+          <li class="radio">
+            <label>
+            <input type="radio" name="love-of-fireworks" value="5">5</label>
+          </li>
+          <li class="radio">
+            <label>
+            <input type="radio" name="love-of-fireworks" value="6">6</label>
+          </li>
+          <li class="radio">
+            <label>
+            <input type="radio" name="love-of-fireworks" value="7">7</label>
+          </li>
+          <li class="radio">
+            <label>
+            <input type="radio" name="love-of-fireworks" value="8">8</label>
+          </li>
+          <li class="radio">
+            <label>
+            <input type="radio" name="love-of-fireworks" value="9">9</label>
+          </li>
+          <li class="radio">
+            <label>
+            <input type="radio" name="love-of-fireworks" value="10">10</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="form-group">
+        <label for="nuclear-proximity">How close do you live to a nuclear power plant?</label>
+        <select class="form-control" id="nuclear-proximity">
+          <option></option>
+          <option>less than 1000 miles</option>
+          <option>less than 100 miles</option>
+          <option>less than 20 miles</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
     </form>
-  </div>
-  <div id="hidden2">
-    If you were on the planet <span id="selected-planet"></span> your would be <span id="planetary-age"></span> years old and you would live to be <span id="planetary-life-expectancy"></span> years old.
+    <div id="hidden1">
+      <p>According to my calculations, your should live to about <span id="life-expectancy"></span> years old.</p>
+
+      <p>To see your age and life expectancy if you were living on another plant simply select one of the planets from the drop-down menue below.</p>
+        <div class="form-group">
+          <label for="planet-select">Select one of the planets below:</label>
+          <select class="form-control" id="planet-select">
+            <option></option>
+            <option>Mercury</option>
+            <option>Venus</option>
+            <option>Mars</option>
+            <option>Jupiter</option>
+          </select>
+          <button type="click" class="planet-button">Submit</button>
+        </div>
+    </div>
+    <div id="hidden2">
+      If you were on the planet <span id="selected-planet"></span> your would be <span id="planetary-age"></span> years old and you would live to be <span id="planetary-life-expectancy"></span> years old.
+    </div>
   </div>
 </body>
-
 </html>

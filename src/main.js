@@ -15,11 +15,6 @@ $(document).ready(function () {
 
       let inputtedUser = new User(`{inputtedName}`, `{inputtedAge}`, `{inputtedGender}`)
       let inputtedUser = inputtedUser.lifeExpectancyCalculator();
-      // console.log(inputtedName);
-      // console.log(inputtedAge);
-      // console.log(inputtedGender);
-      // console.log(inputtedFireworkPropensity);
-      // console.log(inputtedNuclearProximity);
 
       $("#hidden1").show();
       $("#life-expectancy").show(this.lifeExpectancy);

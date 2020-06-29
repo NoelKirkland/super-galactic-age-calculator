@@ -48,5 +48,5 @@ export class User {
     this.planetaryAge = parseInt((this.age * 365/(365*11.86)).toFixed());
     this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*11.86)).toFixed());
   }
-}
+};
 
