@@ -5,9 +5,10 @@ export class User {
     this.gender = gender,
     this.fireworkPropensity = fireworkPropensity,
     this.nuclearProximity = nuclearProximity,
-    this.lifeExpectancy = null,
-    this.planetaryAge = null,
-    this.planetaryLifeExpectancy = null
+    this.lifeExpectancy,
+    this.planetaryAge,
+    this.planetaryLifeExpectancy,
+    this.planetaryLifeSpan
   }
 
 
@@ -35,15 +36,19 @@ export class User {
     if (planet === "Mercury"){
       this.planetaryAge = parseInt((this.age * 365/(365*0.24)).toFixed());
       this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*0.24)).toFixed());
+      this.planetaryLifeSpan = this.planetaryLifeExpectancy - this.planetaryAge;
     } else if (planet === "Venus"){
       this.planetaryAge = parseInt((this.age * 365/(365*0.62)).toFixed());
       this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*0.62)).toFixed());
+      this.planetaryLifeSpan = this.planetaryLifeExpectancy - this.planetaryAge;
     } else if (planet === "Mars"){
       this.planetaryAge = parseInt((this.age * 365/(365*1.88)).toFixed());
       this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*1.88)).toFixed());
+      this.planetaryLifeSpan = this.planetaryLifeExpectancy - this.planetaryAge;
     } else if (planet === "Jupiter") {
       this.planetaryAge = parseInt((this.age * 365/(365*11.86)).toFixed());
       this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*11.86)).toFixed());
+      this.planetaryLifeSpan = this.planetaryLifeExpectancy - this.planetaryAge;
     }
   }
 };

@@ -21,6 +21,11 @@ describe('User', () => {
     reusableUser.planetCalculator("Mercury");
     expect(reusableUser.planetaryLifeExpectancy).toBe(283);
   });
+  test('Should correctly calculate how much longer the user has left to live on Mercury', () => {
+    reusableUser.lifeExpectancyCalculator();
+    reusableUser.planetCalculator("Mercury");
+    expect(reusableUser.planetaryLifeSpan).toEqual(170);
+  })
   test('Should correctly calculate age on Venus', () => {
     reusableUser.planetCalculator("Venus");
     expect(reusableUser.planetaryAge).toBe(44);
