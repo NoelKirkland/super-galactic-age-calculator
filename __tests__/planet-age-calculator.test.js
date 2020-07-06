@@ -63,4 +63,9 @@ describe('User', () => {
     reusableUser.planetCalculator("Jupiter");
     expect(reusableUser.planetaryLifeExpectancy).toBe(6);
   });
+  test('Should correctly calculate how much longer the user has left to live on Jupiter', () => {
+    reusableUser.lifeExpectancyCalculator();
+    reusableUser.planetCalculator("Jupiter");
+    expect(reusableUser.planetaryLifeSpan).toEqual(4);
+  });
 });
