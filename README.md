@@ -6,56 +6,73 @@
 
 ## Description
 
-_In this web application the user is promted to fill out a few different data fields like; name, age, gender, how much they like fireworks and their proximity to a nuclear power plant. With just their age we are able to calculate how many solar-years old they would be if they were born on another planet. From some of the other information the user has inputted we are able to roughly determine their estimated lifespan. Once we know the user's estimated lifespan we can then tell them how many solar-years old they would potentially live to if they were born on another planet._
+_In this web application the user is prompted to fill out a few different data fields like; name, age, gender, how much they like fireworks and their proximity to a nuclear power plant. With just their age we are able to calculate how many solar-years old they would be if they were born on another planet. From some of the other information the user has inputted we are able to roughly determine their estimated lifespan. Once we know the user's estimated lifespan we can then tell them how many solar-years old they would potentially live to if they were born on another planet._
 
-* Open by downloading:
+* _Download the application from GitHub_:
   1. _Open the following web address in your browser:
 `https://github.com/NoelKirkland`_
   2. _Click on the button labeled_ Repositories
-  3. _Navigate into the `super-galactic-age-calculator` repository and click the green button labeled_ Clone or download.
-  4. _Open the directory and double click the `index.html` file to have it open in your default browser_
+  3. _Navigate into the `currency-exchange-calculator` repository and click the green button labeled "Clone or download" and download the zip to your computer_
 
-* _Open by cloning:_
-  1. _Open the following web address in your browser:
-`https://github.com/NoelKirkland`_
-  2. _Click on the button labeled_ Repositories
-  3. _Navigate into the `super-galactic-age-calculator` and click the green button labeled_ Clone or download.
-  4. _Open the directory in your preferred text-editor_
-  5. _Open the `index.html` file in your preferred browser_
+* _Open, add API key, and install_
+  1. _Open the downloaded application in a text editor (V.S. Code preferred)_
+  2. _Create a file in the root directory of the application titled ".env"_
+  3. _Open a new terminal in your text editor (Ctrl+` in V.S. Code) and run the command <code>$ npm install</code>_
 
-* _Open in browser:_
-  1. _Click the following web address to view the gh-pages published version to have it open in your default browser:
-`https://noelkirkland.github.io/super-galactic-age-calculator`_
+* _Build and start_
+  1. _Once all webpacks have been installed, run the command `$npm run build` in the project's terminal_
+  2. _Once application is fully built, run the command `$npm run start`. This should automatically open a tab in your default browser where you can now use the application_
+  3. _Have fun!_
 
-## User Interface Specifications
-|  Behavior: | Input: | Output: |
-| :---: | :---: | :---: |
-|  user enters name | Noel |  |
-|  user enters age | 27 |  |
-|  user enters their gender | male |  |
-|  user enters their love of fireworks on a scale from one to ten | 9 |  |
-|  user selects from a drop down menue their residential proximity to a nuclear power plant. " less than 20 miles", " less than 100 miles", "less than 1000 miles" | less than 1000 miles |  |
-|  user clicks submit to see their calculated life expectancy | _button click_ | According to my calculations, your should live to about _78_ years old.
-|  user clicks selects a planet from the dropdown and clicks submit to see their age and life expectancy on their selected planet | _button click_ | Hello Noel, with a current earth age of 27 and a life expectancy of 78 you would currently be 14 years old on Mars and you would live to be 41 there. |
-|||
 
-## Techinal specifications
+## Specifications
 
-* Create a function that will build a user profile that includes; first name, age, gender, love of fireworks, proximity to power plant, and life expectancty
+* The program creates a user object that includes first name, age, gender, love of fireworks, and proximity to power plant. 
 
-* Create a function that will calculate the user's life expectancy
+  | Input: | Output: |
+  | :---: | :---: |
+  | "Noel", 27, "Male", 10, "less than 1000 miles" | {firstName: "Noel", age: 27, gender: "Male", fireworkPropensity: 10, nuclearProximity: "less than 1000 miles"} |
+  |||
 
-* Create a function that will calculate the age, life expectancy, and years left to live for the user if they were on Mercury
+* The program will calculate the user's life expectancy on earth
 
-* Create a function that will calculate the age, life expectancy, and years left to live for the user if they were on Venus
+  | Input: | Output: |
+  | :---: | :---: |
+  | "Noel", 27, "Male", 10, "less than 1000 miles" | this.lifeExpectancy = 68 |
+  |||
 
-* Create a function that will calculate the age, life expectancy, and years left to live for the user if they were on Mars
+* The program will calculate the age, life expectancy, and years left to live for the user if they were on Mercury
 
-* Create a function that will calculate the age, life expectancy, and years left to live for the user if they were on Jupiter
+  | Input: | Output: |
+  | :---: | :---: |
+  | "Noel", 27, "Male", 10, "less than 1000 miles" | this.planetaryAge = 113, this.planetaryLifeExpectancy = 283, this.planetaryLifeSpan = 170 |
+  |||
+
+* The program will calculate the age, life expectancy, and years left to live for the user if they were on Venus
+
+  | Input: | Output: |
+  | :---: | :---: |
+  | "Noel", 27, "Male", 10, "less than 1000 miles" | this.planetaryAge = 44, this.planetaryLifeExpectancy = 110, this.planetaryLifeSpan = 66 |
+  |||
+
+* The program will calculate the age, life expectancy, and years left to live for the user if they were on Mars
+
+  | Input: | Output: |
+  | :---: | :---: |
+  | "Noel", 27, "Male", 10, "less than 1000 miles" | this.planetaryAge = 14, this.planetaryLifeExpectancy = 36, this.planetaryLifeSpan = 22 |
+  |||
+
+* The program will calculate the age, life expectancy, and years left to live for the user if they were on Jupiter
+
+  | Input: | Output: |
+  | :---: | :---: |
+  | "Noel", 27, "Male", 10, "less than 1000 miles" | this.planetaryAge = 2, this.planetaryLifeExpectancy = 6, this.planetaryLifeSpan = 4 |
+  |||
 
 ## Known Bugs
 
-_I was not able to get the UI to function correctly in my remote server. This was not due to a problem with my application's code (presumable) but because of some bug in the webpack configuration._
+_I was not yet able to get full front end functionality._
+
 ## Support and contact details
 
 _If you run into any problems, or have any questions at all, feel free to reach out to me at noelkirkland@gmail.com_

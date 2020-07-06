@@ -1,13 +1,18 @@
 import { User } from '../src/planet-age-calculator.js';
 
 describe('User', () => {
+  test('Should create a new user object with a life expectancy, a Mars age and a Mars life expectancy', () => {
+  let newObject = new User("Noel", 27, "Male", 10, "less than 1000 miles")
+  expect(newObject).toMatchObject({firstName: "Noel", age: 27, gender: "Male", fireworkPropensity: 10, nuclearProximity: "less than 1000 miles"})
+  });
+});
+
+describe('User', () => {
   let reusableUser;
   beforeEach(() => {
     reusableUser = new User("Noel", 27, "Male", 10, "less than 1000 miles");
   });
 
-  test('Should create a new user object with a life expectancy, a Mars age and a Mars life expectancy', () => {
-  });
   test('Should correctly calculate life expectancy for user', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(68);
@@ -76,8 +81,7 @@ describe('User', () => {
     reusableUser = new User("Laurel", 26, "Female", 10, "less than 1000 miles");
   });
 
-  test('Should create a new user object with a life expectancy, a Mars age and a Mars life expectancy', () => {
-  });
+
   test('Should correctly calculate life expectancy for user', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(76);
@@ -146,8 +150,7 @@ describe('User', () => {
     reusableUser = new User("Laurel", 26, "Female", 7, "less than 1000 miles");
   });
 
-  test('Should create a new user object with a life expectancy, a Mars age and a Mars life expectancy', () => {
-  });
+
   test('Should correctly calculate life expectancy for user', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(79);
@@ -216,8 +219,7 @@ describe('User', () => {
     reusableUser = new User("Kathryn", 63, "Female", 10, "less than 100 miles");
   });
 
-  test('Should create a new user object with a life expectancy, a Mars age and a Mars life expectancy', () => {
-  });
+
   test('Should correctly calculate life expectancy for user', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(70);
@@ -286,8 +288,7 @@ describe('User', () => {
     reusableUser = new User("Kathryn", 63, "Female", 5, "less than 100 miles");
   });
 
-  test('Should create a new user object with a life expectancy, a Mars age and a Mars life expectancy', () => {
-  });
+
   test('Should correctly calculate life expectancy for user', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(75);
@@ -356,8 +357,7 @@ describe('User', () => {
     reusableUser = new User("John", 45, "Male", 10, "less than 20 miles");
   });
 
-  test('Should create a new user object with a life expectancy, a Mars age and a Mars life expectancy', () => {
-  });
+
   test('Should correctly calculate life expectancy for user', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(54);
@@ -426,8 +426,7 @@ describe('User', () => {
     reusableUser = new User("John", 45, "Male", 3, "less than 20 miles");
   });
 
-  test('Should create a new user object with a life expectancy, a Mars age and a Mars life expectancy', () => {
-  });
+
   test('Should correctly calculate life expectancy for user', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(59);
