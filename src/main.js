@@ -13,35 +13,13 @@ $(document).ready(function () {
       let inputtedFireworkPropensity = parseInt($("input:radio[name=love-of-fireworks]:checked").val());
       let inputtedNuclearProximity = $("#nuclear-proximity").val();
 
-      let inputtedUser = new User(`{inputtedName}`, `{inputtedAge}`, `{inputtedGender}`)
-      let inputtedUser = inputtedUser.lifeExpectancyCalculator();
-
-      $("#hidden1").show();
-      $("#life-expectancy").show(this.lifeExpectancy);
-  });
-  $('.planet-button').click(function (event) {
+      let inputtedUser = new User(inputtedName, inputtedAge, inputtedGender, inputtedFireworkPropensity, inputtedNuclearProximity)
+      
       let planetSelect = $("#planet-select").val();
-
-      if (`{planetSelect}` = "Mercury"){
-        inputtedUser.mercuryCalculator();
-        $("#selected-planet").show(`{planetSelect}`);
-        $("#planetary-age").show(this.planetaryAge);
-        $("#planetary-life-expectancy").show(this.lifeExpectancy);
-      } else if (`{planetSelect}` = "Venus"){
-        inputtedUser.venusCalculator();
-        $("#selected-planet").show(`{planetSelect}`);
-        $("#planetary-age").show(this.planetaryAge);
-        $("#planetary-life-expectancy").show(this.lifeExpectancy);
-      } else if (`{planetSelect}` = "Mars"){
-        inputtedUser.marsCalculator();
-        $("#selected-planet").show(`{planetSelect}`);
-        $("#planetary-age").show(this.planetaryAge);
-        $("#planetary-life-expectancy").show(this.lifeExpectancy);
-      } else if (`{planetSelect}` = "Jupiter"){
-        inputtedUser.jupiterCalculator();
-        $("#selected-planet").show(`{planetSelect}`);
-        $("#planetary-age").show(this.planetaryAge);
-        $("#planetary-life-expectancy").show(this.lifeExpectancy);
-      }
+      
+      inputtedUser.lifeExpectancyCalculator();
+      $("#life-expectancy").show(`According to my calculations, your should live to about ${this.lifeExpectancy} years old ${planetSelect}.`);
+      inputtedUser.planetCalculator(planetSelect)
+      $("#planet-life-expectancy").show(`If you were on the planet ${planetSelect} your would be ${this.planetaryAge} years old, you would live to be ${this.planetaryLifeExpectancy} years old and, you would have${this.planetaryLifeSpan} years left to live.`)
   });
 });

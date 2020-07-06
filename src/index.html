@@ -2,7 +2,6 @@
 <html>
 
 <head>
-  <script type="text/javascript" src="bundle.js"></script>
   <title>Super Galactic Age Calculator</title>
 </head>
 
@@ -90,27 +89,21 @@
         </select>
       </div>
 
+      <div class="form-group">
+        <label for="planet-select">Select one of the planets below:</label>
+        <select class="form-control" id="planet-select">
+          <option></option>
+          <option>Mercury</option>
+          <option>Venus</option>
+          <option>Mars</option>
+          <option>Jupiter</option>
+        </select>
+      </div>
+
       <button type="submit" class="btn">Submit</button>
     </form>
-    <div id="hidden1">
-      <p>According to my calculations, your should live to about <span id="life-expectancy"></span> years old.</p>
-
-      <p>To see your age and life expectancy if you were living on another plant simply select one of the planets from the drop-down menue below.</p>
-        <div class="form-group">
-          <label for="planet-select">Select one of the planets below:</label>
-          <select class="form-control" id="planet-select">
-            <option></option>
-            <option>Mercury</option>
-            <option>Venus</option>
-            <option>Mars</option>
-            <option>Jupiter</option>
-          </select>
-          <button type="click" class="planet-button">Submit</button>
-        </div>
-    </div>
-    <div id="hidden2">
-      If you were on the planet <span id="selected-planet"></span> your would be <span id="planetary-age"></span> years old and you would live to be <span id="planetary-life-expectancy"></span> years old.
-    </div>
+    <div id="life-expectancy"></div>
+    <div id="planet-life-expectancy"></div>
   </div>
 </body>
 </html>

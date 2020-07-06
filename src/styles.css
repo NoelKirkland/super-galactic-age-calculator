@@ -5,9 +5,10 @@ list-style-type: none;
 padding-right: 20px;
 }
 
-#hidden1{
+#life-expectancy{
   display: none;
 }
-#hidden2{
+
+#planet-life-expectancy{
   display: none;
 }

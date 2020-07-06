@@ -21,7 +21,7 @@ export class User {
       this.lifeExpectancy  -= 10;
     }
       
-    this.lifeExpectancy -= this.fireworkPropensity
+    this.lifeExpectancy -= this.fireworkPropensity;
     
     if (this.nuclearProximity === "less than 1000 miles"){
       this.lifeExpectancy  *= 0.95;
@@ -31,8 +31,6 @@ export class User {
       this.lifeExpectancy  *= 0.75;
     }
     this.lifeExpectancy = parseInt(this.lifeExpectancy.toFixed());
-
-    return this.lifeExpectancy;
   }
 
   planetCalculator(planet){
@@ -54,7 +52,4 @@ export class User {
       this.planetaryLifeSpan = this.planetaryLifeExpectancy - this.planetaryAge;
     }
   }
-};
-
-
-11.86
+}
