@@ -18,8 +18,8 @@ $(document).ready(function () {
       let planetSelect = $("#planet-select").val();
       
       inputtedUser.lifeExpectancyCalculator();
-      $("#life-expectancy").show(`According to my calculations, your should live to about ${this.lifeExpectancy} years old ${planetSelect}.`);
+      $("#life-expectancy").show(`According to my calculations, you should live to be about ${this.lifeExpectancy} years old`);
       inputtedUser.planetCalculator(planetSelect)
-      $("#planet-life-expectancy").show(`If you were on the planet ${planetSelect} your would be ${this.planetaryAge} years old, you would live to be ${this.planetaryLifeExpectancy} years old and, you would have${this.planetaryLifeSpan} years left to live.`)
+      $("#planet-life-expectancy").show(`If you were on the planet ${planetSelect} you would be ${this.planetaryAge} years old, you would live to be ${this.planetaryLifeExpectancy} years old and, you would have ${this.planetaryLifeSpan} years left to live.`)
   });
 });

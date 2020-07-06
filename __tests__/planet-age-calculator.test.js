@@ -12,7 +12,6 @@ describe('User', () => {
   beforeEach(() => {
     reusableUser = new User("Noel", 27, "Male", 10, "less than 1000 miles");
   });
-
   test('Should correctly calculate life expectancy for user', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(68);
@@ -80,8 +79,6 @@ describe('User', () => {
   beforeEach(() => {
     reusableUser = new User("Laurel", 26, "Female", 10, "less than 1000 miles");
   });
-
-
   test('Should correctly calculate life expectancy for user', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(76);
@@ -149,8 +146,6 @@ describe('User', () => {
   beforeEach(() => {
     reusableUser = new User("Laurel", 26, "Female", 7, "less than 1000 miles");
   });
-
-
   test('Should correctly calculate life expectancy for user', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(79);
@@ -218,8 +213,6 @@ describe('User', () => {
   beforeEach(() => {
     reusableUser = new User("Kathryn", 63, "Female", 10, "less than 100 miles");
   });
-
-
   test('Should correctly calculate life expectancy for user', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(70);
@@ -287,8 +280,6 @@ describe('User', () => {
   beforeEach(() => {
     reusableUser = new User("Kathryn", 63, "Female", 5, "less than 100 miles");
   });
-
-
   test('Should correctly calculate life expectancy for user', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(75);
@@ -356,8 +347,6 @@ describe('User', () => {
   beforeEach(() => {
     reusableUser = new User("John", 45, "Male", 10, "less than 20 miles");
   });
-
-
   test('Should correctly calculate life expectancy for user', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(54);
@@ -425,8 +414,6 @@ describe('User', () => {
   beforeEach(() => {
     reusableUser = new User("John", 45, "Male", 3, "less than 20 miles");
   });
-
-
   test('Should correctly calculate life expectancy for user', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(59);
