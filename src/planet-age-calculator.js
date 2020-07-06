@@ -36,10 +36,11 @@ export class User {
     if (planet === "Mercury"){
       this.planetaryAge = parseInt((this.age * 365/(365*0.24)).toFixed());
       this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*0.24)).toFixed());
-      this.planetaryLifeSpan = this.planetaryLifeExpectancy - this.planetaryAge
+      this.planetaryLifeSpan = this.planetaryLifeExpectancy - this.planetaryAge;
     } else if (planet === "Venus"){
       this.planetaryAge = parseInt((this.age * 365/(365*0.62)).toFixed());
       this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*0.62)).toFixed());
+      this.planetaryLifeSpan = this.planetaryLifeExpectancy - this.planetaryAge
     } else if (planet === "Mars"){
       this.planetaryAge = parseInt((this.age * 365/(365*1.88)).toFixed());
       this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*1.88)).toFixed());
