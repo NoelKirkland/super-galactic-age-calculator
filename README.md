@@ -45,13 +45,13 @@ _In this web application the user is promted to fill out a few different data fi
 
 * Create a function that will calculate the user's life expectancy
 
-* Create a function that will calculate the age and life expectancy for the user if they were on Mercury
+* Create a function that will calculate the age, life expectancy, and years left to live for the user if they were on Mercury
 
-* Create a function that will calculate the age and life expectancy for the user if they were on Venus
+* Create a function that will calculate the age, life expectancy, and years left to live for the user if they were on Venus
 
-* Create a function that will calculate the age and life expectancy for the user if they were on Mars
+* Create a function that will calculate the age, life expectancy, and years left to live for the user if they were on Mars
 
-* Create a function that will calculate the age and life expectancy for the user if they were on Jupiter
+* Create a function that will calculate the age, life expectancy, and years left to live for the user if they were on Jupiter
 
 ## Known Bugs
 
