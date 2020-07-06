@@ -1,0 +1,21 @@
+{
+  "liveServer.settings.port": 6969,
+  "cSpell.enabled": true,
+  "cSpell.showStatus": true,
+  "cSpell.enabledLanguageIds": [
+    "csharp",
+    "go",
+    "javascript",
+    "javascriptreact",
+    "markdown",
+    "php",
+    "plaintext",
+    "typescript",
+    "typescriptreact",
+    "yml"
+  ],
+  "cSpell.words": [
+    "webpacks",
+    "jsonified"
+  ]
+}

@@ -23,7 +23,7 @@ $(document).ready(function () {
       let planetSelect = $("#planet-select").val();
 
       if (`{planetSelect}` = "Mercury"){
-        inputtedUser.murcuryCalculator();
+        inputtedUser.mercuryCalculator();
         $("#selected-planet").show(`{planetSelect}`);
         $("#planetary-age").show(this.planetaryAge);
         $("#planetary-life-expectancy").show(this.lifeExpectancy);

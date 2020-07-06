@@ -1,5 +1,5 @@
 export class User {
-  constructor(firstName, age, gender, fireworkPropensity, nuclearProximity, lifeExpectancy, planetaryAge, planetaryLifeExpectancy){
+  constructor(firstName, age, gender, fireworkPropensity, nuclearProximity){
     this.firstName = firstName,
     this.age = age,
     this.gender = gender,
@@ -9,12 +9,14 @@ export class User {
     this.planetaryAge = null,
     this.planetaryLifeExpectancy = null
   }
+
+
     
   lifeExpectancyCalculator(){
     this.lifeExpectancy = 100;
     if (this.gender === "Female"){
       this.lifeExpectancy  -= 10;
-    } else (this.gender === "Male");{
+    } else if (this.gender === "Male");{
       this.lifeExpectancy  -= 18;
     } 
     this.lifeExpectancy -= this.fireworkPropensity
@@ -29,24 +31,20 @@ export class User {
     this.lifeExpectancy = parseInt(this.lifeExpectancy.toFixed());
   }
 
-  murcuryCalculator(){
-    this.planetaryAge = parseInt((this.age * 365/(365*0.24)).toFixed());
-    this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*0.24)).toFixed());
-  }
-
-  venusCalculator(){
-    this.planetaryAge = parseInt((this.age * 365/(365*0.62)).toFixed());
-    this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*0.62)).toFixed());
-  }
-
-  marsCalculator(){
-    this.planetaryAge = parseInt((this.age * 365/(365*1.88)).toFixed());
-    this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*1.88)).toFixed());
-  }
-
-  jupiterCalculator(){
-    this.planetaryAge = parseInt((this.age * 365/(365*11.86)).toFixed());
-    this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*11.86)).toFixed());
+  planetCalculator(planet){
+    if (planet === "Mercury"){
+      this.planetaryAge = parseInt((this.age * 365/(365*0.24)).toFixed());
+      this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*0.24)).toFixed());
+    } else if (planet === "Venus"){
+      this.planetaryAge = parseInt((this.age * 365/(365*0.62)).toFixed());
+      this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*0.62)).toFixed());
+    } else if (planet === "Mars"){
+      this.planetaryAge = parseInt((this.age * 365/(365*1.88)).toFixed());
+      this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*1.88)).toFixed());
+    } else if (planet === "Jupiter") {
+      this.planetaryAge = parseInt((this.age * 365/(365*11.86)).toFixed());
+      this.planetaryLifeExpectancy = parseInt((this.lifeExpectancy * 365/(365*11.86)).toFixed());
+    }
   }
 };
 

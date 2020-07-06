@@ -12,40 +12,40 @@ describe('User', () => {
     reusableUser.lifeExpectancyCalculator();
     expect(reusableUser.lifeExpectancy).toBe(68);
   });
-  test('Should correctly calculate age on Murcury', () => {
-    reusableUser.murcuryCalculator();
+  test('Should correctly calculate age on Mercury', () => {
+    reusableUser.planetCalculator("Mercury");
     expect(reusableUser.planetaryAge).toBe(113);
   });
-  test('Should correctly calculate life expectancy on Murcury', () => {
+  test('Should correctly calculate life expectancy on Mercury', () => {
     reusableUser.lifeExpectancyCalculator();
-    reusableUser.murcuryCalculator();
+    reusableUser.planetCalculator("Mercury");
     expect(reusableUser.planetaryLifeExpectancy).toBe(283);
   });
   test('Should correctly calculate age on Venus', () => {
-    reusableUser.venusCalculator();
+    reusableUser.planetCalculator("Venus");
     expect(reusableUser.planetaryAge).toBe(44);
   });
   test('Should correctly calculate life expectancy on Venus', () => {
     reusableUser.lifeExpectancyCalculator();
-    reusableUser.venusCalculator();
+    reusableUser.planetCalculator("Venus");
     expect(reusableUser.planetaryLifeExpectancy).toBe(110);
   });
-  test('Should correctly calculate age on Venus', () => {
-    reusableUser.marsCalculator();
+  test('Should correctly calculate age on Mars', () => {
+    reusableUser.planetCalculator("Mars");
     expect(reusableUser.planetaryAge).toBe(14);
   });
-  test('Should correctly calculate life expectancy on Venus', () => {
+  test('Should correctly calculate life expectancy on Mars', () => {
     reusableUser.lifeExpectancyCalculator();
-    reusableUser.marsCalculator();
+    reusableUser.planetCalculator("Mars");
     expect(reusableUser.planetaryLifeExpectancy).toBe(36);
   });
-  test('Should correctly calculate age on Venus', () => {
-    reusableUser.jupiterCalculator();
+  test('Should correctly calculate age on Jupiter', () => {
+    reusableUser.planetCalculator("Jupiter");
     expect(reusableUser.planetaryAge).toBe(2);
   });
-  test('Should correctly calculate life expectancy on Venus', () => {
+  test('Should correctly calculate life expectancy on Jupiter', () => {
     reusableUser.lifeExpectancyCalculator();
-    reusableUser.jupiterCalculator();
+    reusableUser.planetCalculator("Jupiter");
     expect(reusableUser.planetaryLifeExpectancy).toBe(6);
   });
 });
