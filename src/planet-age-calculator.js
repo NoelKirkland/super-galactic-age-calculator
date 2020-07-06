@@ -15,11 +15,12 @@ export class User {
     
   lifeExpectancyCalculator(){
     this.lifeExpectancy = 100;
-    if (this.gender === "Female"){
-      this.lifeExpectancy  -= 10;
-    } else if (this.gender === "Male");{
+    if (this.gender === "Male"){
       this.lifeExpectancy  -= 18;
-    } 
+    } else {
+      this.lifeExpectancy  -= 10;
+    }
+      
     this.lifeExpectancy -= this.fireworkPropensity
     
     if (this.nuclearProximity === "less than 1000 miles"){
@@ -30,6 +31,8 @@ export class User {
       this.lifeExpectancy  *= 0.75;
     }
     this.lifeExpectancy = parseInt(this.lifeExpectancy.toFixed());
+
+    return this.lifeExpectancy;
   }
 
   planetCalculator(planet){
