@@ -2,7 +2,7 @@
 
 #### _This web application tell the user how old they would be on another planet as well as how old they might live to on that planet._
 
-#### By _**Noel R. Kirkland** - **July 7th, 2020**_
+#### By _**Noel R. Kirkland** - **July 3rd, 2020**_
 
 ## Description
 
